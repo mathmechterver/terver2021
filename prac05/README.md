@@ -1,1 +1,1 @@
-[colab url](https://colab.research.google.com/github/mathmechterver/terver2020/blob/master/prac05/Practice5.ipynb)
+5. [Зависимость. Условная вероятность. Теорема Баеса.](https://mathmechterver.github.io/terver2021/prac05/prac05.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac05/prac05.ipynb)

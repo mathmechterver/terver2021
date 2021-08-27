@@ -1,1 +1,1 @@
-[colab url](https://colab.research.google.com/github/mathmechterver/terver2020/blob/master/prac04/Practice4.ipynb)
+4. [Сигма-алгебра, вероятностная мера](https://mathmechterver.github.io/terver2021/prac04/prac04.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac04/prac04.ipynb)

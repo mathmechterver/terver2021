@@ -1,1 +1,1 @@
-[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac01/Practice1.ipynb)
+1. [Введение в теорию вероятности](https://mathmechterver.github.io/terver2021/prac01/prac01.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac01/prac01.ipynb)

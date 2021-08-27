@@ -1,1 +1,1 @@
-[colab url](https://colab.research.google.com/github/mathmechterver/terver2020/blob/master/prac05/Practice5.ipynb)
+2. [Схема Бернулли, теорема Пуассона](https://mathmechterver.github.io/terver2021/prac02/prac02.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac02/prac02.ipynb)
