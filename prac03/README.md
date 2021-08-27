@@ -1,1 +1,1 @@
-3. [Кольца, полукольца, $\sigma$-кольца](https://mathmechterver.github.io/terver2021/prac03/prac03.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac03/prac03.ipynb)
+3. [Кольца, полукольца, sigma-кольца](https://mathmechterver.github.io/terver2021/prac03/prac03.html) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac03/prac03.ipynb)
