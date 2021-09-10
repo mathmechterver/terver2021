@@ -13135,6 +13135,7 @@ div#notebook {
 <p>1) $\varnothing \in S$ (есть пустое множество, есть 0)</p>
 <p>2) $\forall A \in S$, $\forall B \in S$ -&gt; $A \cap B \in S$ (есть пересечение)</p>
 <p>3) $\forall A \in S$, $\forall A_1 \in S$, $A_1 \subset A$ -&gt; $\exists A_2, \ldots A_n \in S$ : $A_1 \sqcup A_2 \sqcup \ldots \sqcup A_n = A$ (есть разбиение)</p>
+<p><strong>Пример:</strong> $\{\{1,2,3\},\{1\}, \{2\}, \{3\}, \varnothing \}$</p>
 
 </div>
 </div>
@@ -13147,6 +13148,7 @@ div#notebook {
 <li>$\forall A \in R$, $\forall B \in R$ -&gt; $A \cap B \in R$</li>
 </ol>
 <p>2) $\forall A \in R$, $\forall B \in R$ -&gt; $A \bigtriangleup B \in R$ (симметричная разность, все кроме пересечения)</p>
+<p><strong>Пример:</strong> Все натуральные числа (кольцо без единицы)</p>
 
 </div>
 </div>
@@ -13173,7 +13175,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Определение 5.</strong> Система множеств R называется <strong>$\sigma$-кольцом</strong>, если:</p>
+<p><strong>Определение 5.</strong> Система множеств $R$ называется <strong>$\sigma$-кольцом</strong>, если:</p>
 <p>1) $R$ — кольцо;</p>
 <p>2) $\forall A_1,\ldots ,A_n, \ldots \in R$ -&gt; $\bigcup_{i=1}^{\infty} A_i \in R$</p>
 <p>(Просто перешли от дискретного к счетному)</p>
@@ -13206,7 +13208,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1)</strong> Докажите, что любое кольцо это полукольцо.</p>
+<p><strong>1)</strong></p>
+<ul>
+<li>Докажите, что в кольце есть разность и объединение.</li>
+<li>Докажите, что любое кольцо это полукольцо.</li>
+</ul>
 
 </div>
 </div>
@@ -13218,7 +13224,7 @@ div#notebook {
 <ul>
 <li>Докажите, что множество всех подмножеств множества $\{1,2,3\}$ является алгеброй. Нарисуйте эту алгебру. Покажите, где здесь единица, а где ноль.</li>
 <li>Докажите, что для любого множества $A$, $2^A$ - алгебра.</li>
-<li>Дополните до алгебры систему $\{\{1\}, \{2,3\}, \{3,4\}\}$</li>
+<li>Дополните до минимальной алгебры систему $\{\{1, 2,3\}, \{3,4, 5\}\}$. Покажите, что она не совпадает с булеаном.</li>
 </ul>
 
 </div>
@@ -13236,8 +13242,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4)</strong> Докажите, что система всех интервалов на прямой не образует даже полукольца.</p>
-<p>В самом деле, полуинтервал $(0;2) - (0;1)=[1;2)$ нельзя разбить на конечное семейство непересекающихся интервалов.</p>
+<p><strong>4)</strong> Докажите, что система всех <strong>интервалов</strong> на прямой не образует даже полукольца. Что насчет промежутков?</p>
 
 </div>
 </div>
@@ -13245,7 +13250,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>5)</strong> Доказать,что σ-алгебра замкнута относительно операции счетного пересечения.</p>
+<p><strong>5)</strong> Доказать,что $\sigma$-алгебра замкнута относительно операции счетного пересечения.</p>
 
 </div>
 </div>
@@ -13253,40 +13258,41 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>6)</strong> Доказать, что следующие множества являются полукольцами с единицей, и указать соответствующие единицы:
-1) $\{[α; β) | a \leq α \leq β \leq b\}$ (включая пустой промежуток);
+<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1076;&#1086;&#1084;-(&#1082;&#1072;&#1078;&#1076;&#1072;&#1103;-&#1079;&#1072;&#1076;&#1072;&#1095;&#1072;-&#1087;&#1086;-1&#1073;)-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1076;&#1086;&#1084; (&#1082;&#1072;&#1078;&#1076;&#1072;&#1103; &#1079;&#1072;&#1076;&#1072;&#1095;&#1072; &#1087;&#1086; 1&#1073;) <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1076;&#1086;&#1084;-(&#1082;&#1072;&#1078;&#1076;&#1072;&#1103;-&#1079;&#1072;&#1076;&#1072;&#1095;&#1072;-&#1087;&#1086;-1&#1073;)-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1)</strong> Пусть есть множество множеств $\{\{1,2,3, 4\}, \{3,4,5, 6\}\}$. Дополните эту систему до минимального полукольца, минимального кольца и минимальной алгебры.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2)</strong> Доказать, что:</p>
+<ul>
+<li><p>(0.5) пересечение произвольной непустой системы колец является кольцом (возможно, состоящим лишь из пустого множества);</p>
+</li>
+<li><p>(0.25) пересечение произвольной непустой системы σ-колец является σ-кольцом;</p>
+</li>
+<li><p>(0.25) пересечение непустой (конечной) системы алгебр с одной и той же единицей является алгеброй.</p>
+</li>
+</ul>
+<p>В каждой задаче считать, что в системе какое-то конечное число колец/алгебр.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>3)</strong> Доказать, что следующие множества являются полукольцами с единицей, и указать соответствующие единицы:
+1) $\{[α; β) | a \leq α &lt; β \leq b\}$ (включая пустой промежуток);
 2) система всех промежутков, вложенных в отрезок $[a; b]$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1076;&#1086;&#1084;-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1076;&#1086;&#1084; <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1076;&#1086;&#1084;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1)</strong> Пусть $X = \mathcal{N}$, $A = 2^{X}$. Является ли $A$ $\sigma$-алгеброй?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2)</strong> Пусть есть множество множеств $\{\{1,2,3\}, \{3,4,5\}, \{1,4,5\}\}$. Дополните эту систему до минимального полукольца, минимального кольца и минимальной алгебры.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3)</strong> Докажите, что система всех промежутков на прямой (включая и бесконечные) образует только полукольцо с единицей. (Почему не кольцо?)</p>
 
 </div>
 </div>
@@ -13302,15 +13308,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>5)</strong> Доказать, что:</p>
-<ul>
-<li><p>(0.5) пересечение произвольной непустой системы колец является кольцом (возможно, состоящим лишь из пустого множества);</p>
-</li>
-<li><p>(0.25) пересечение произвольной непустой системы σ-колец является σ-кольцом;</p>
-</li>
-<li><p>(0.25) пересечение непустой системы алгебр с одной и той же единицей является алгеброй.</p>
-</li>
-</ul>
+<p><strong>5)</strong> Пусть $A$ — бесконечное множество, $Y$ — система всех его не более чем счетных подмножеств. Доказать, что Y — σ-кольцо.</p>
 
 </div>
 </div>
@@ -13333,7 +13331,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2)(1)</strong> Докажите, что множество всех прямоугольников на плоскости, со сторонами параллельными осям координат, <strong>вписанных в окружность</strong>, не образуют полукольцо.</p>
+<p><strong>2)(1)</strong> Докажите, что множество всех прямоугольников на плоскости, со сторонами параллельными осям координат, <strong>вписанных в окружность</strong>, не образуют даже полукольцо.</p>
 
 </div>
 </div>
