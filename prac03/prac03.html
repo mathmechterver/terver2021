@@ -13173,6 +13173,16 @@ $$\Omega = \{\omega_1, \ldots, \omega_n\}$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Мера</strong> - положительная счетно-аддитивная функция из $\mathcal{F}$ в $\mathbb{R}+$</p>
+<p><strong>Вероятность</strong> - счетно-аддитивная функция из $\mathcal{F}$ в $[0,1]$</p>
+<p>Функция на множествах $\mu$ является <strong>счетно-аддитивной</strong>, если для любой бесконечной последовательности непересекающихся подмножеств $A_1, A_2, \ldots, A_n, \ldots$ выполняется равенство</p>
+$$\mu(\bigcup^{\infty}_{i}A_i) = \sum_{i}^{\infty}\mu(A_i)$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091; <a class="anchor" id="chapter2" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#182;</a></h2>
 </div>
 </div>
@@ -13194,7 +13204,7 @@ $$\Omega = \{\omega_1, \ldots, \omega_n\}$$</p>
 <li>Постройте сигма-алгебру, если мы знаем, что первый раз выпала 3-ка.</li>
 <li>Постройте сигма-алгебру, если мы знаем, что первый раз выпала 3-ка, а третий раз нечетное число.</li>
 </ul>
-<p>Задайте какую-нибудт меру на данной сигма алгебре.</p>
+<p>Задайте какую-нибудь вероятностную меру на данной сигма алгебре.</p>
 
 </div>
 </div>
@@ -13276,25 +13286,33 @@ $\bigcap_{i=1}^{\infty} A_i$, $A_1 \cap \overline{A}_{57}$, $\bigcup_{i=40}^{\in
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>4.</strong>
 Монеточка подкидывается бесконечное число раз: $X_n$ равно 132456, если при $n$-ом подбрасывании выпало ребро, и 123456, если решка. И ничего другого выпасть не может. Определим несколько $\sigma$ - алгебр: $\mathcal{F}_n = \sigma(X_1,X_2,\ldots,X_n)$, $\mathcal{H}_n:=\sigma(X_n,X_{n+1},X_{n+2},\ldots)$.</p>
-<p><strong>(1 балл)</strong> Приведите по два нетривиальных (т.е. $\Omega$ и $\emptyset$ не называть) примера такого события $A$, что:</p>
+<p><strong>(0.34 балл)</strong> Приведите по два нетривиальных (т.е. $\Omega$ и $\emptyset$ не называть) примера такого события $A$, что:</p>
 <ul>
 <li>$A\in\mathcal{F}_{2021}$</li>
 <li>$A\notin \mathcal{F}_{2021}$</li>
 <li>$A$ лежит в каждой $\mathcal{H}_n$</li>
 </ul>
-<p><strong>(0.5 балл)</strong> В какие из упомянутых $\sigma$ - алгебр входят события:</p>
+<p><strong>(0.33 балл)</strong> В какие из упомянутых $\sigma$ - алгебр входят события:</p>
 <ul>
 <li>$X_{45} &gt; 0$</li>
 <li>$X_{45} &gt; X_{2021}$</li>
 <li>$X_{45} &gt; X_{2021} &gt; X_{15}$</li>
 </ul>
-<p><strong>(0.5 балл)</strong> Упростите выражения:</p>
+<p><strong>(0.33 балл)</strong> Упростите выражения:</p>
 <ul>
 <li>$\mathcal{F}_{11} \cap \mathcal{F}_{25}$</li>
 <li>$\mathcal{F}_{11} \cup \mathcal{F}_{25}$</li>
 <li>$\mathcal{H}_{11} \cap \mathcal{H}_{25}$</li>
 <li>$\mathcal{H}_{11} \cup \mathcal{H}_{25}$</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5</strong> Пусть дана убывающая последовательность $B_1 \supseteq B_2, \supseteq \ldots, \supseteq B_n \supseteq \ldots$ вложенных в друг друга множеств из $\mathcal{F}$, такая что $\mu(B_1) &lt; \infty$ и $B=\bigcap^{\infty}_{n=1}B_n$. Тогда $\mu(B) = \lim_{n \to \infty}\mu(B_n)$</p>
 
 </div>
 </div>
