@@ -10,3 +10,5 @@
 4. [Условная вероятность, теорема Баеса](https://mathmechterver.github.io/terver2021/prac04/prac04.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac04/prac04.ipynb)
 
 5. [Схема Бернулли, теорема Пуассона](https://mathmechterver.github.io/terver2021/prac05/prac05.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac05/prac05.ipynb)
+
+6. [Марковские цепи](https://mathmechterver.github.io/terver2021/prac06/prac06.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac06/prac06.ipynb)
