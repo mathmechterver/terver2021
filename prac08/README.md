@@ -1,1 +1,1 @@
-[colab url](https://colab.research.google.com/github/mathmechterver/terver2020/blob/master/prac06/Practice6.ipynb)
+6. [Марковские цепи](https://mathmechterver.github.io/terver2021/prac06/prac06.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac06/prac06.ipynb)
