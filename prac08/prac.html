@@ -13096,7 +13096,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="7.-&#1051;&#1080;&#1085;&#1077;&#1081;&#1085;&#1086;&#1089;&#1090;&#1100;-&#1084;&#1072;&#1090;&#1086;&#1078;&#1080;&#1076;&#1072;&#1085;&#1080;&#1103;-&#1076;&#1083;&#1103;-&#1044;&#1057;&#1042;.">7. &#1051;&#1080;&#1085;&#1077;&#1081;&#1085;&#1086;&#1089;&#1090;&#1100; &#1084;&#1072;&#1090;&#1086;&#1078;&#1080;&#1076;&#1072;&#1085;&#1080;&#1103; &#1076;&#1083;&#1103; &#1044;&#1057;&#1042;.<a class="anchor-link" href="#7.-&#1051;&#1080;&#1085;&#1077;&#1081;&#1085;&#1086;&#1089;&#1090;&#1100;-&#1084;&#1072;&#1090;&#1086;&#1078;&#1080;&#1076;&#1072;&#1085;&#1080;&#1103;-&#1076;&#1083;&#1103;-&#1044;&#1057;&#1042;.">&#182;</a></h1>
+<h1 id="8.-&#1044;&#1080;&#1089;&#1087;&#1077;&#1088;&#1089;&#1080;&#1103;.-&#1050;&#1086;&#1074;&#1072;&#1088;&#1080;&#1072;&#1094;&#1080;&#1103;.-&#1050;&#1086;&#1088;&#1088;&#1077;&#1083;&#1103;&#1094;&#1080;&#1103;.">8. &#1044;&#1080;&#1089;&#1087;&#1077;&#1088;&#1089;&#1080;&#1103;. &#1050;&#1086;&#1074;&#1072;&#1088;&#1080;&#1072;&#1094;&#1080;&#1103;. &#1050;&#1086;&#1088;&#1088;&#1077;&#1083;&#1103;&#1094;&#1080;&#1103;.<a class="anchor-link" href="#8.-&#1044;&#1080;&#1089;&#1087;&#1077;&#1088;&#1089;&#1080;&#1103;.-&#1050;&#1086;&#1074;&#1072;&#1088;&#1080;&#1072;&#1094;&#1080;&#1103;.-&#1050;&#1086;&#1088;&#1088;&#1077;&#1083;&#1103;&#1094;&#1080;&#1103;.">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13131,9 +13131,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Математическое ожидание</strong>
-$$\mathbb{E}[\xi] = \sum_{i}x_iP(\xi=x_i)$$</p>
-<p>P.S. Матожидание <strong>существует</strong>, если оно корректно определено и конечно.</p>
+<p>Дисперсия случайной величины
+$$\mathbb{D}[\xi] = \mathbb{E}[\xi - \mathbb{E}[\xi]] = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$$</p>
 
 </div>
 </div>
@@ -13141,8 +13140,17 @@ $$\mathbb{E}[\xi] = \sum_{i}x_iP(\xi=x_i)$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Самое важное свойство всея тервера: для <strong>произвольных</strong> (зависимых и нет) сл.в. $\xi$ и $\mu$ верно, что</p>
-$$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
+<p>Ковариация двух случайных величин
+$$cov(\xi,\mu) = \mathbb{E}\Big[(\xi - \mathbb{E}[\xi])(\mu - \mathbb{E}[\mu])\Big]$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Корреляция двух случайных величин</p>
+$$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
 </div>
 </div>
 </div>
@@ -13156,7 +13164,7 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> Докажите линейность матожидания для дискретных случайных величин.</p>
+<p><strong>0.</strong> Показать, что $\mathbb{E}[\xi - \mathbb{E}[\xi]] = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$</p>
 
 </div>
 </div>
@@ -13164,10 +13172,12 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2.</strong> Имеется $n$ пронумерованных писем и $n$ пронумерованных конвертов. Письма случайным образом раскладываются по конвертам (все $n!$
-    способов равновероятны). Найдите математическое ожидание числа
-    совпадений номеров письма и конверта (письмо лежит в конверте с
-    тем же номером).</p>
+<p><strong>1.</strong> Пусть $\xi$ и $\eta$ - независимые случайные величины. Доказать, что</p>
+<ul>
+<li>$E\xi\eta = E \xi E \eta$.</li>
+<li>$D(\xi + \mu) = D\xi + D\mu$?</li>
+</ul>
+<p>Показать, что в общем случае это неправда (привести пример).</p>
 
 </div>
 </div>
@@ -13175,10 +13185,14 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> На первом этаже семнадцатиэтажного общежития в лифт вошли
-    десять человек. Предполагая, что каждый из вошедших (независимо
-    от остальных) может с равной вероятностью жить на любом из шестнадцати этажей (со 2-го по 17-й), найдите математическое ожидание
-    числа остановок лифта.</p>
+<p><strong>2.</strong>
+Докажите свойства ковариаций</p>
+<ul>
+<li>$cov(\xi, \mu) = cov(\mu, \xi)$</li>
+<li>$cov(\alpha\xi, \mu) = \alpha cov(\xi, \mu)$</li>
+<li>$cov(\xi_1 + \xi_2, \mu) = cov(\xi_1, \mu) + cov(\xi_2, \mu)$</li>
+<li>$cov(\xi, \mu) \leq \mathbb{D}[\xi]\mathbb{D}[\mu]$</li>
+</ul>
 
 </div>
 </div>
@@ -13186,7 +13200,37 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4.</strong> Разбор <a href="https://neerc.ifmo.ru/wiki/index.php?title=%D0%91%D1%8B%D1%81%D1%82%D1%80%D0%B0%D1%8F_%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0">доказательства</a>, что QuickSort выполняется за $O(n\log{n})$</p>
+<p><strong>3.</strong>
+Двумерное распределение пары целочисленных случайных величин $\xi$ и $\eta$ задаётся с помощью таблицы, где в пересечении столбца $\xi = i$ и строки $\eta = j$ находится вероятность $P\lbrace{\xi = i, \eta = j\rbrace}$.</p>
+<table>
+<thead><tr>
+<th></th>
+<th>$\xi = -1$</th>
+<th>$\xi = 0$</th>
+<th>$\xi = 1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\eta$ $=$ $-1$</td>
+<td>$\frac{1}{8}$</td>
+<td>$\frac{1}{12}$</td>
+<td>$\frac{7}{24}$</td>
+</tr>
+<tr>
+<td>$\eta$ $=$ $1$</td>
+<td>$\frac{5}{24}$</td>
+<td>$\frac{1}{6}$</td>
+<td>$\frac{1}{8}$</td>
+</tr>
+</tbody>
+</table>
+<p>Найти:</p>
+<ul>
+<li>Дисперсию: $D(\xi), D(\eta)$,</li>
+<li>Ковариацию:  $Cov(\xi, \eta) $,</li>
+<li>Корреляцию: $\rho$ $(\xi, \eta)$</li>
+</ul>
 
 </div>
 </div>
@@ -13194,9 +13238,9 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>5.</strong> Всем посмотревшим 7 серию игры в кальмара посвящается:
-У нас есть n участников и n пар стекол. Найдите матожидание выжившего числа участников, при условии, что игроки не тупят, не обгоняют и не умеют различать стекла.</p>
-<p>P.S. кто не смотрел: есть мост из n пар стекол: закалённое и нет. Закалённое стекло выдержит человека, простое нет (участник умирает прыгая на простое, зато остальные узнают инфу о том, какое стекло из пары закаленное). Участники по очереди проходят мост.</p>
+<p><strong>4.</strong>
+Найти коэффициент корреляции между числом <code>единиц</code> и числом <code>шестёрок</code> при $n$ бросаниях правильной игральной кости.</p>
+<p><strong>5.</strong> Монета с вероятностью выпадения герба 0.5 и с вероятностью выпадения решетки 0.5 бросается 7 раз. Найти корреляцию (коэффициент корреляции) между числом гербов, выпадающих при первых 5 бросках, и числом решеток, выпадающих при последних 4 бросках.</p>
 
 </div>
 </div>
@@ -13204,7 +13248,7 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>6.</strong> $\xi$ - сл.в. обозначающая число успехов в серии испытаний бернулли (имеющая биноминальное распределение). Докажите, что $\mathbb{E}[\xi] = np$</p>
+<p><strong>6.</strong>  Вероятность дождя в субботу 0.5, вероятность дождя в воскресенье 0.3. Корреляция между наличием дождя в субботу и наличием дождя в воскресенье равна r. Какова вероятность того, что в выходные вообще не будет дождя?</p>
 
 </div>
 </div>
@@ -13219,18 +13263,33 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> Из множества 10-буквенных слов над русским алфавитом случайным образом выбирается одно $w$ (все слова равновероятны). Найдите ожидание количества подслов “ТЕРВЕР” у слова $w$. (Подсловом считается подпоследовательность, элементы которой в исходном слове идут подряд.)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2.</strong> Ваша хеш-функция переводит объект число от 1 до 10000 с равной вероятностью. У нас имеется 1000 объектов.</p>
+<p><strong>1.</strong>
+Двумерное распределение пары целочисленных случайных величин $\xi$ и $\eta$ задаётся с помощью таблицы, где в пересечении столбца $\xi = i$ и строки $\eta = j$ находится вероятность $P\lbrace{\xi = i, \eta = j\rbrace}$.</p>
+<table>
+<thead><tr>
+<th></th>
+<th>$\xi = 3$</th>
+<th>$\xi = 4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\eta = 1$</td>
+<td>$\frac{5}{12}$</td>
+<td>$\frac{7}{12}$</td>
+</tr>
+<tr>
+<td>$\eta = 2$</td>
+<td>$\frac{11}{12}$</td>
+<td>$\frac{1}{12}$</td>
+</tr>
+</tbody>
+</table>
+<p>Найти:</p>
 <ul>
-<li>(0.5) Какова вероятность того, что произойдет коллизия? </li>
-<li>(0.5) Найдите матожидание кол-ва коллизий? </li>
+<li>Дисперсию: $D(\xi), D(\eta)$,</li>
+<li>Ковариацию:  $Cov(\xi, \eta) $,</li>
+<li>Корреляцию: $\rho$ $(\xi, \eta)$</li>
 </ul>
 
 </div>
@@ -13239,7 +13298,7 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> У нас в хороводе стоит n куриц. В какой-то момент все курицы клюют одного из своих соседей слева или справа. Найти матожидние кол-ва куриц, которых не клюнули.</p>
+<p><strong>2.</strong> Даны 2 случайные величины X и Y, принимающие значения {1, 2, 3, 4}. X c вероятностями 1/4 каждое и Y c вероятностями 1/10, 2/10, 3/10 и 4/10 соответственно.</p>
 
 </div>
 </div>
@@ -13247,7 +13306,7 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4.</strong> В Швейцарском Фейсбуке очень любят сотрудников, поэтому решили, устраивать всем выходной, когда у кого-нибудь из людей день рождение. Однако в этом случае они не могут набирать много людей, так как с большой вероятностью работа будет не выполнена. Работник рождается в любой из дней в году (365 дней) с равной веротяностью. Найдите наибольшее матожидание величины (кол-во сотрудников * кол-во рабочих дней).</p>
+<p><strong>3.</strong> Пусть случайная величина $Z$ принимает значения 0, $\frac{\pi}{2}$, $\pi$ каждое с вероятностью $\frac{1}{3}$. Показать, что случайные величины $\sin{Z}$ и $\cos{Z}$ - зависимые. Найти $cov(\sin{Z}, \cos{Z})$.</p>
 
 </div>
 </div>
@@ -13255,7 +13314,22 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>5.</strong> На день рождения Дианы мы принесли торт с N свечами. Когда мы пытаемся задуть свечи, мы точно задуваем одну свечу, а количество оставшихся гореть свечей распределено равновероятно. (от 0 до N-1). При следующем задуве ситуация аналогичная. Вопрос: найти матожидание числа задуваний, которое должна сделать Диана.</p>
+<p><strong>4.</strong> Из урны с М белыми и N-М черными шарами по схеме случайного выбора без возвращения извлекают n шаров. Положим $Y_i = 1$ если i-й извлечённый шар белый; $Y_j=0$ если i-й шар черный $(i = 1, \ldots, n)$. Найти $cov(Y_i, Y_j) i\neq j$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5.</strong>
+Найти коэффициент корреляции между $\xi$ и $\xi^2$, если:</p>
+<ul>
+<li>(0.5) $P\lbrace{\xi = 0\rbrace} = 1/3, P\lbrace{\xi = 1\rbrace} = 1/3, P\lbrace{\xi = -1\rbrace} = 1/3$ - данный пример показывает, что существуют зависимые случайные величины, для которых $D(\xi + \mu) = D\xi + D\mu$ (см. задание 2 из классной работы)</li>
+</ul>
+<ul>
+<li>(0.5) $P\lbrace{\xi = 0\rbrace} = 1/3, P\lbrace{\xi = 1\rbrace} = 1/2, P\lbrace{\xi = -1\rbrace} = 1/6$;</li>
+</ul>
 
 </div>
 </div>
@@ -13270,8 +13344,9 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1. (2 балла)</strong> В социальной сети зарегестрировано конечное число пользователей. 
-Доказать, что матожидание числа друзей у пользователя меньше или равно матожиданию матожидания числа друзей у друзей пользователя.</p>
+<p><strong>1.(3 балла)</strong> $a,b,c$ - сл. величины с 0 матожиданием.
+$corr(a,c) = corr(b,c) = 0.9$</p>
+<p>Чему может быть равна $corr(a,b)$?</p>
 
 </div>
 </div>
@@ -13279,12 +13354,7 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2. (1 балл)</strong> Дискретная случайная величина $\xi$ принимает $k$
-    положительных значений $x_1,\ldots,x_k$ с вероятностями,
-    равными соответственно $p_1,\ldots,p_k$. Предполагая, что
-    возможные значения записаны в возрастающем порядке,
-    доказать, что
-    $$\lim_{n\rightarrow\infty}\frac{E\xi^{n+1}}{E\xi^n}=x_k. $$</p>
+<p><strong>2. (1 балл)</strong> Доказать, что если для сл.в. $\xi$, $\eta$ для любых $m,n$ выполнено $\mathbb{E}\xi^{m}\mu^{n} = \mathbb{E}\xi^{m}\mathbb{E}\mu^{n}$, то $\xi$ и $\mu$ - независимы.</p>
 
 </div>
 </div>
@@ -13292,11 +13362,17 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3. (0.5 балл)</strong> У нас есть случайная величина, которая выдает 0 и 1 с равными вероятностями. Как используя только такую случайную величину получить сл. величину, которая с равными вероятностями выдает 0, 1, 2?</p>
-<p><strong>4. (1 балл)</strong> Ребята на ЗМШ решили сыграть в игру: У нас есть 6 пустых стаканов пронумерованных от 1 до 6. Участник подбрасывает игральный кубик и получает число от 1 до 6. Если стакан под выпавшим номером пустой - то его заполняют Бэтменом, если стакан полный - то участник опустошает данный стакан. Если игрок попадает в ситуацию, когда все 6 стаканов заполнены, то он выпивает все 6 стаканов, его нарекают “Темным рыцарем” и игра заканчивается. Вопрос, найдите среднюю длительность данной игры (матожидание ходов), при условии, что все участники готовы сражаться до победного конца.</p>
-<p><strong>5. (0.5 балл)</strong> <a href="https://codeforces.com/problemset/problem/621/C">https://codeforces.com/problemset/problem/621/C</a></p>
-<p><strong>6. (0.5 балл)</strong> <a href="https://codeforces.com/problemset/problem/839/C">https://codeforces.com/problemset/problem/839/C</a></p>
-<p><strong>7. (0.5 балл)</strong> <a href="https://codeforces.com/problemset/problem/453/A">https://codeforces.com/problemset/problem/453/A</a></p>
+<p><strong>3. (1 балл)</strong> 
+Пусть $\xi_1, \xi_2, ... $ - независимые случайные величины, принимающие значения $1$ и $0$ с вероятностями $p$ и $1 - p$ соответственно. Найти среднее значение и дисперсию суммы $\zeta = \eta_1 + ... + \eta_n$, если:</p>
+<ul>
+<li>$\eta_i = \xi_i \xi_{i + 1}$;</li>
+<li>$\eta_i = \xi_i \xi_{i + 1} \xi_{i + 2}$;</li>
+<li>Если $\eta_i$ задана правилом:<ul>
+<li>$\eta_i = 0$, если $\xi_i + \xi_{i + 1}$ - чётное число, </li>
+<li>$\eta_i = 1$, иначе</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13304,15 +13380,15 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node42.html#SECTION0001010">Матожидание</a></p>
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node43.html">Свойства матожидание</a></p>
+<p><strong>4. (1 балл)</strong>
+Пусть в урне содержится $N$ шаров, из них $a$ белых, $b$ черных и $c$ красных, $a + b + c = N$. Вынимается $n$ шаров, и пусть среди них $\xi$ белых и $\eta$ черных.</p>
+<ul>
+<li><p>Показать, что если совершаемый выбор –– это «выбор
+с возвращением», то $Cov(\xi, \eta) = -npq$, где $p = \frac{a}{N}$ и $q = \frac{b}{N}$. Если же производится «выбор без возвращения», то $Cov(\xi, \eta) = -npq\frac{N - n}{N - 1}$.</p>
+</li>
+<li><p>Показать также, что в обоих случаях корреляция $\rho(\xi, \eta) = -\sqrt{\frac{pq}{(1 - p)(1 - q)}}$.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13320,7 +13396,15 @@ $$\mathbb{E}[a\xi + b\mu] = a\mathbb{E}[\xi] + b\mathbb{E}[\mu]$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://stepik.org/lesson/48668/step/1?unit=26438">Матожидание Видео степик</a></p>
+<h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1044;&#1086;&#1087;.-&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;">&#1044;&#1086;&#1087;. &#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;<a class="anchor-link" href="#&#1044;&#1086;&#1087;.-&#1052;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;">&#182;</a></h2><p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node48.html#SECTION0001110">Ковариация</a></p>
+<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node49.html#SECTION0001120">Корреляция</a></p>
 
 </div>
 </div>
