@@ -1,1 +1,1 @@
-3. [Сигма-алгебра, расширение информации](https://mathmechterver.github.io/terver2021/prac03/prac03.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac03/prac03.ipynb)
+3. [Сигма-алгебра, информация](https://mathmechterver.github.io/terver2021/prac03/prac.html)[colab url](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac03/prac.ipynb)

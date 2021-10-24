@@ -13103,7 +13103,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='data/mem.jpeg' width=400/></p>
+<p><img src='https://github.com/mathmechterver/terver2021/blob/main/prac08/data/mem.jpeg?raw=1' width=400/></p>
 
 </div>
 </div>
@@ -13132,7 +13132,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Дисперсия случайной величины
-$$\mathbb{D}[\xi] = \mathbb{E}[\xi - \mathbb{E}[\xi]] = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$$</p>
+$$\mathbb{D}[\xi] = \mathbb{E}[\xi - \mathbb{E}[\xi]]^2 = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$$</p>
 
 </div>
 </div>
@@ -13164,7 +13164,7 @@ $$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>0.</strong> Показать, что $\mathbb{E}[\xi - \mathbb{E}[\xi]] = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$</p>
+<p><strong>0.</strong> Показать, что $\mathbb{E}[\xi - \mathbb{E}[\xi]]^2 = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$</p>
 
 </div>
 </div>
@@ -13178,6 +13178,7 @@ $$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
 <li>$D(\xi + \mu) = D\xi + D\mu$?</li>
 </ul>
 <p>Показать, что в общем случае это неправда (привести пример).</p>
+<p>На какую величину сумма дисперсий будет отличаться от дисперсии сумм?</p>
 
 </div>
 </div>
@@ -13186,12 +13187,14 @@ $$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>2.</strong>
-Докажите свойства ковариаций</p>
+Докажите свойства ковариаций и корреляций</p>
 <ul>
 <li>$cov(\xi, \mu) = cov(\mu, \xi)$</li>
 <li>$cov(\alpha\xi, \mu) = \alpha cov(\xi, \mu)$</li>
 <li>$cov(\xi_1 + \xi_2, \mu) = cov(\xi_1, \mu) + cov(\xi_2, \mu)$</li>
-<li>$cov(\xi, \mu) \leq \mathbb{D}[\xi]\mathbb{D}[\mu]$</li>
+<li>$cov(\xi_1, \xi_2) = \mathbb{E}\xi_1\xi_2 - \mathbb{E}\xi_1\mathbb{E}\xi_2$</li>
+<li>$-1\le cor(\xi_1, \xi_2) \le 1$</li>
+<li>$cov(\xi, \mu)^2 \leq \mathbb{D}[\xi]\mathbb{D}[\mu]$</li>
 </ul>
 
 </div>
@@ -13390,13 +13393,6 @@ $corr(a,c) = corr(b,c) = 0.9$</p>
 </li>
 </ul>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
 </div>
 </div>
 </div>
