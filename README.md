@@ -18,3 +18,6 @@
 8. [Дисперсия, ковариация](https://mathmechterver.github.io/terver2021/prac08/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac08/prac.ipynb)
 
 9. [Марковские цепи](https://mathmechterver.github.io/terver2021/prac09/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac09/prac.ipynb)
+
+10. [Непрерывные случайные величины](https://mathmechterver.github.io/terver2021/prac10/prac.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac10/prac.ipynb)
+
