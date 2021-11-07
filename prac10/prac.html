@@ -13132,7 +13132,31 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Случайной (скалярной) величиной</strong> $\xi$ называется такая функция $\xi: \Omega \to \mathbb{R}$, что для любого борелевского множества $B \in \mathcal{B}$ выполнено</p>
-$$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$<p>P.S. Почти всегда в задачах мы берем $\mathcal{B}$ как сигма алгебра всех прямоугольников на $\mathbb{R}^{n}$</p>
+$$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Напоминание:</p>
+<p>Минимальная $\sigma$-алгебру, содержащую все $n$-мерные параллелепипеды $\{[a_1,b_1) \times \ldots \times [a_n, b_n)\}$- называют борелевской $\sigma$-алгеброй над $\mathbb{R}^{n}$ ($\mathcal{B}$), а ее элементы - борелевскими множествами множества $\mathbb{R}^{n}$ ($B$).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Всякое борелевское множество на отрезке является измеримым относительно <strong>меры Лебега</strong>, но обратное неверно.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
 
 </div>
 </div>
@@ -13141,7 +13165,42 @@ $$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$<p>P.S. Почти
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Функция распределения случайной (скалярной) величины</strong> $\xi$ называют отображение $F_{\xi}: \mathbb{R} \to [0,1]$, заданное по правилу 
-$$F_{\xi}(x) = \mathbb{P}{\omega|\xi(\omega) &lt; x}$$</p>
+$$F_{\xi}(x) = \mathbb{P}(\omega|\xi(\omega) &lt; x)$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Действительная случайная величина $\xi$ называется <strong>абсолютно непрерывной</strong>, если найдется такая измеримая функция $\rho_{\xi}$, называемая <strong>плотностью</strong>, что
+$$F_{\xi}(b) - F_{\xi}(a) = \int_{a}^{b}\rho_{\xi}(x)dx$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Математическое ожидание абсолютно непрерывной случайной величины $\xi$ можно считать по формуле 
+$$\mathbb{E}[\xi] = \int_{-\infty}^{\infty}x\rho_{\xi}(x)dx = \int_{-\infty}^{\infty}xdF_{\xi}(x) = \int_{\Omega}\xi(\omega)P(d\omega) = $$</p>
+<p>Дисперсия вводится аналогично дискретным величинам $$\mathbb{D}[\xi] = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$$</p>
 
 </div>
 </div>
