@@ -13096,77 +13096,18 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="9.-&#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1077;-&#1094;&#1077;&#1087;&#1080;.-&#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1081;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1081;-&#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;.">9. &#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1077; &#1094;&#1077;&#1087;&#1080;. &#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1081; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1081; &#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;.<a class="anchor-link" href="#9.-&#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1077;-&#1094;&#1077;&#1087;&#1080;.-&#1052;&#1072;&#1088;&#1082;&#1086;&#1074;&#1089;&#1082;&#1080;&#1081;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1081;-&#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;.">&#182;</a></h1>
+<h1 id="10.-&#1053;&#1077;&#1087;&#1088;&#1077;&#1088;&#1099;&#1074;&#1085;&#1099;&#1077;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1077;-&#1074;&#1077;&#1083;&#1080;&#1095;&#1080;&#1085;&#1099;.-&#1055;&#1083;&#1086;&#1090;&#1085;&#1086;&#1089;&#1090;&#1100;.">10. &#1053;&#1077;&#1087;&#1088;&#1077;&#1088;&#1099;&#1074;&#1085;&#1099;&#1077; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1077; &#1074;&#1077;&#1083;&#1080;&#1095;&#1080;&#1085;&#1099;. &#1055;&#1083;&#1086;&#1090;&#1085;&#1086;&#1089;&#1090;&#1100;.<a class="anchor-link" href="#10.-&#1053;&#1077;&#1087;&#1088;&#1077;&#1088;&#1099;&#1074;&#1085;&#1099;&#1077;-&#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1077;-&#1074;&#1077;&#1083;&#1080;&#1095;&#1080;&#1085;&#1099;.-&#1055;&#1083;&#1086;&#1090;&#1085;&#1086;&#1089;&#1090;&#1100;.">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="data/markov.png" alt="title"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Пусть $X$ - конечное или счетное множество (фазовое пространство $\in \mathcal{N}$).</p>
-<p>Система принимает состояния из $X$, $\xi_n$ - ее состояние в момент времени $n$ ($\xi_n: \Omega \to X$)</p>
-<ul>
-<li>Система не зависит от предыдущих состояний $ \forall n \geq 1$ и $x_1, \ldots, x_{n+1} \in X$</li>
-</ul>
-$$P(\xi_{n+1}=x_{n+1}|\xi_0=x_0, \xi_1=x_1, \ldots, \xi_n=x_n) = P(\xi_{n+1}=x_{n+1}|\xi_n=x_n)$$<p>Вероятность перехода $P_n(x,y)$</p>
-<ol>
-<li>$\forall n \in \mathbb{N}$ $\forall x \in X$ $\sum_{y \in X} P_n(x,y) = 1$</li>
-<li>$\forall n \in \mathbb{N}$ $\forall x,y \in X$ $P_n(x,y) \geq 0$</li>
-<li>$P_n(x,y) = P(\xi_n = y|\xi_{n-1} = x)$, если $P(\xi_{n-1}=x)&gt;0$ </li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;.-(&#1052;&#1086;&#1078;&#1085;&#1086;-&#1076;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1100;-&#1087;&#1086;-&#1080;&#1085;&#1076;&#1091;&#1082;&#1094;&#1080;&#1080;-ref)">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;. (&#1052;&#1086;&#1078;&#1085;&#1086; &#1076;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1100; &#1087;&#1086; &#1080;&#1085;&#1076;&#1091;&#1082;&#1094;&#1080;&#1080; <a href="https://stepik.org/lesson/254734/step/9?unit=234942">ref</a>)<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072;.-(&#1052;&#1086;&#1078;&#1085;&#1086;-&#1076;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1100;-&#1087;&#1086;-&#1080;&#1085;&#1076;&#1091;&#1082;&#1094;&#1080;&#1080;-ref)">&#182;</a></h3><p>Марковскую цепь также можно задать через след выражение и оно эквивалентно определению выше
-$P(\xi_0 = x_0, \xi_1 = x_1,\ldots, \xi_n = x_n) = P(\xi_0=x_0)P_1(x_1, x_2)\ldots P_n(x_{n-1}, x_n)$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1054;&#1076;&#1085;&#1086;&#1088;&#1086;&#1076;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1087;&#1080;-&#1084;&#1072;&#1088;&#1082;&#1086;&#1074;&#1072;">&#1054;&#1076;&#1085;&#1086;&#1088;&#1086;&#1076;&#1085;&#1099;&#1077; &#1094;&#1077;&#1087;&#1080; &#1084;&#1072;&#1088;&#1082;&#1086;&#1074;&#1072;<a class="anchor-link" href="#&#1054;&#1076;&#1085;&#1086;&#1088;&#1086;&#1076;&#1085;&#1099;&#1077;-&#1094;&#1077;&#1087;&#1080;-&#1084;&#1072;&#1088;&#1082;&#1086;&#1074;&#1072;">&#182;</a></h3><p>Марковская цепь является однородной, если вероятность перехода из состояния на шаге $n$ в состояние на шаге $m$ зависит только от $n-m$</p>
-<p>$P_{n, n+1}(x,y) = P(x,y) = T_{x,y}$ - элемент матрицы перехода</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;">&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1072;&#1088;&#1085;&#1086;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;">&#182;</a></h3><p>$\pi^*$ называется стационарным, если для любого начального распределения $\pi$:
-$$\lim_{n\to \infty} \pi * T^n = \pi^*$$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1042;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1085;&#1099;&#1077;-&#1089;&#1086;&#1089;&#1090;&#1072;&#1103;&#1085;&#1080;&#1103;">&#1042;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1085;&#1099;&#1077; &#1089;&#1086;&#1089;&#1090;&#1072;&#1103;&#1085;&#1080;&#1103;<a class="anchor-link" href="#&#1042;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1085;&#1099;&#1077;-&#1089;&#1086;&#1089;&#1090;&#1072;&#1103;&#1085;&#1080;&#1103;">&#182;</a></h3><p>$f_a(n) = P(\xi_n = a, \xi_{n-1} \neq a, \ldots, \xi_{1} \neq a|\xi_{0} = a)$ - вероятность возврата</p>
-<ul>
-<li>Если $\sum_{n=1}^{\infty}f_a(n)=1$, то $a$ - возвратное</li>
-<li>Если $\sum_{n=1}^{\infty}f_a(n)&lt;1$, то $a$ - невозвратное</li>
+<h2 id="&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#182;</a></h2><ul>
+<li><a href="#chapter1">Теория</a></li>
+<li><a href="#chapter2">Задачи на пару</a></li>
+<li><a href="#chapter3">Домашнее задание</a></li>
+<li><a href="#chapter4">Гробы</a></li>
 </ul>
 
 </div>
@@ -13175,21 +13116,65 @@ $$\lim_{n\to \infty} \pi * T^n = \pi^*$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091;<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#182;</a></h2>
+<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103; <a class="anchor" id="chapter1" /><a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Дана марковская цепь с фазовым пространством $X = \{ 1, 2, 3 \}$. Вероятности переходов не зависят от времени и показаны еа диаграмме ниже.  В начальный момент цепь находится в состоянии $1$. </li>
-</ol>
-<p><img src="data/markov-1.png" alt="title"></p>
+<p><a href="https://docviewer.yandex.ru/view/487873668/?page=1&amp;*=AzciO0F0OcAVKulHyC5ocLh3TkN7InVybCI6InlhLWRpc2stcHVibGljOi8vWHBPVWQwTXV1dHZXNUVVQ1ZNQ0JRYUh5Q1IyNVpxL2c2V0JXKzdHbjdQWDFML1NtVUhuSnc0bzlFQzhNYWUrNnEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoibjkucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI0ODc4NzM2NjgiLCJ0cyI6MTYzNjI5MjEyOTIxOSwieXUiOiIyODMzNTcyMDExNjI5MTI0OTAxIn0%3D">Ссылка на презентацию</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Случайной (скалярной) величиной</strong> $\xi$ называется такая функция $\xi: \Omega \to \mathbb{R}$, что для любого борелевского множества $B \in \mathcal{B}$ выполнено</p>
+$$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$<p>P.S. Почти всегда в задачах мы берем $\mathcal{B}$ как сигма алгебра всех прямоугольников на $\mathbb{R}^{n}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Функция распределения случайной (скалярной) величины</strong> $\xi$ называют отображение $F_{\xi}: \mathbb{R} \to [0,1]$, заданное по правилу 
+$$F_{\xi}(x) = \mathbb{P}{\omega|\xi(\omega) &lt; x}$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091; <a class="anchor" id="chapter2" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1.</strong>
+Случайная величина $\xi$ имеет функцию распределения $F_{\xi}$, определенную равенством
+$$F_\xi(x) =\left\{
+    \begin{array}{cc}
+    4^{x}, &amp; x\leq 0 \\
+    1, &amp; x&gt;0
+    \end{array}\right.$$</p>
 <ul>
-<li>(<a href="https://stepik.org/lesson/254734/step/10?unit=234942">ref</a>)Найдите вероятности $P(\xi_0=1,\xi_1=3,\xi_2=2,\xi_3=1)$ и $P(\xi_0=1,\xi_1=2,\xi_2=3,\xi_3=1)$.</li>
-<li>(<a href="https://stepik.org/lesson/254734/step/12?unit=234942">ref</a>)Найдите вероятности $P(\xi_2=3|\xi_0=1)$ и $P(\xi_3=2|\xi_0=1)$</li>
-<li>Выпишете матрицу переходов $T$</li>
+<li>Найдите вероятности $P(\xi \geq -2)$ и $P(-1 &lt; \xi &lt; 0)$. </li>
+<li>Найдите плотность $\rho_{\xi}(x)$.</li>
+</ul>
+<p><strong>2.</strong> Случайная величина $\xi$ имеет непрерывную функцию распределения $F_{\xi}(x)$. 
+Найдите функцию распределения случайной величины $\eta=3-2\xi$.</p>
+<p><strong>3.</strong> 2 лыжника условились о встрече в промежуток времени $[0,1]$. Момент прихода на встречу каждым выбирается равновероятно. Первый лыжник пришел в момент времени $t_1$, второй лыжник в $t_2$. Пусть $\theta = |t_1 - t_2|$. Найдите:</p>
+<ul>
+<li>функцию распределения $F_{\theta}(x)$</li>
+<li>плотность вероятности $\rho_{\theta}(x)$</li>
+<li>матожидание $E\theta$</li>
+<li>дисперсию $D\theta$</li>
 </ul>
 
 </div>
@@ -13198,51 +13183,53 @@ $$\lim_{n\to \infty} \pi * T^n = \pi^*$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2.</strong> Рассмотрим марковскую цепь с 2 состояниями и матрицей переходов. $0 &lt; a, b &lt; 1$</p>
-$$T = \begin{bmatrix}
-        1 - a &amp; a \\
-        b &amp; 1 - b 
-\end{bmatrix}$$<p>Попадая в первое состояние мы пишем в строку $a$, во второе - $b$.
-Начальное распределение $\pi = \Big(\frac{1}{2}, \frac{1}{2}\Big)$. 
+<p><strong>4.</strong>
+Дана плотность вероятности $\rho_{\xi} = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$.
+Доказать что:</p>
+<ul>
+<li>$E_{\xi}= \mu$</li>
+<li>$\sigma_{\xi}= \sigma$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1044;&#1047;-">&#1044;&#1047; <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1044;&#1047;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1.</strong>
+В квадрате $[0,1]^2$ наугад выбирается точка $\omega=(\omega_1,\omega_2)$. Случайная величина $\xi$ задается равенством $\xi(\omega)=\omega_1+\omega_2$. Найдите функцию распределения $F_{\xi}(x)$.</p>
+<p><strong>2.</strong>
+Случайная величина $\xi$ имеет непрерывную функцию распределения $F_{\xi}(x)$. 
+Найдите функцию распределения случайной величины $\eta=1-3\xi^2$.</p>
+<p><strong>3.</strong> Плотность распределения случайной величины $\xi$ задана формулой
+    $$f_\xi(x) =\left\{
+    \begin{array}{cc}
+    Cx^{-3/2}, &amp; x\geq 1 \\
+    0, &amp; x&lt;1
+    \end{array}\right.$$
 Найти:</p>
 <ul>
-<li>$T^{n}$</li>
-<li>Стационарное распределение</li>
-<li>Отношение количеств букв $a$ к буквам $b$ в бесконечной строке. </li>
-<li>Отношение количество пар $ab$ к парам $bb$ в бесконечной строке.</li>
+<li>постоянную $C$; </li>
+<li>плотность распределения $\eta=1/\xi$ </li>
+<li>$P\{0,1&lt;\eta&lt;0,2\}$.</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> (<a href="https://stepik.org/lesson/254735/step/7?unit=234943">ref</a>)
-Вероятности переходов для однородной цепи Маркова с фазовым пространством $\{1,2,3,4,5,6\}$ показаны на рисунке ниже. Найдите все возвратные состояния цепи.</p>
-<p><img src="data/markov-2.png" alt="title"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1044;&#1086;&#1084;&#1072;">&#1044;&#1086;&#1084;&#1072;<a class="anchor-link" href="#&#1044;&#1086;&#1084;&#1072;">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> (3) Цепь Маркова с пятью состояниями задана диаграммой (см. рис.). Пусть начальное распределение $\pi = (1,0,0,0,0)$</p>
+<p><strong>4.</strong> 
+Функция распределения случайной величины $\xi$ имеет вид $F_{\xi}(x)=a + b*arctg(x)$. 
+Найдите:</p>
 <ul>
-<li>(0.5) Найдите вероятности $P(\xi_0=1,\xi_1=3,\xi_2=2,\xi_3=1)$ и $P(\xi_0=1,\xi_1=2,\xi_2=3,\xi_3=1)$.</li>
-<li>(0.5) Найдите вероятности $P(\xi_2=3|\xi_0=1)$ и $P(\xi_3=2|\xi_0=1)$</li>
-<li>(1) Составьте матрицу переходов $Q$, соответствующую этой диаграмме и найдите матрицу $Q(2)$. </li>
-<li>(1) Найдите стационарное распределение вероятностей.</li>
+<li>параметры $a$ и $b$</li>
+<li>плотность вероятности.</li>
 </ul>
-<p><img src="data/markov-3.png" alt="title"></p>
+<p><strong>5.</strong> Случайная величина $\xi$ имеет распределение Коши с плотностью $\rho_{\xi}(x)=\frac{1}{\pi(1+x^2)}$. 
+Найдите плотность и функцию распределения случайной величины $\eta = \frac{1}{1+\xi^2}$.</p>
 
 </div>
 </div>
@@ -13250,13 +13237,32 @@ $$T = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2.</strong> (2) Пусть $|X| = 3$ , вероятности перехода $t_{ii} = 0$, $t_{ij} = \frac{1}{2}$ при любых $i \neq j$ . Найдите для момента времени 100 вероятность каждого состояния, если начальное распределение $\pi_0$ равно соответственно:</p>
-<ul>
-<li>(1/3, 1/3, 1/3)</li>
-<li>(1/2, 1/2, 0)</li>
-<li>(a, b, c)</li>
-</ul>
-<p>Найдите у $T$ собственные числа. Укажите стационарное распределение.</p>
+<h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1044;&#1086;&#1087;.-&#1084;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;">&#1044;&#1086;&#1087;. &#1084;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;<a class="anchor-link" href="#&#1044;&#1086;&#1087;.-&#1084;&#1072;&#1090;&#1077;&#1088;&#1080;&#1072;&#1083;&#1099;">&#182;</a></h2><p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node23.html#SECTION000710">Случайные величины</a></p>
+<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node24.html#SECTION000720">Распределения случайных величин</a></p>
+<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node25.html#SECTION000730">Функция распределения</a></p>
+<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node27.html#SECTION000750">Примеры непрерывных распределений</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1042;&#1080;&#1076;&#1077;&#1086;">&#1042;&#1080;&#1076;&#1077;&#1086;<a class="anchor-link" href="#&#1042;&#1080;&#1076;&#1077;&#1086;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://stepik.org/lesson/48684/step/1?unit=26454">Непрерывные случайные величины</a></p>
 
 </div>
 </div>
