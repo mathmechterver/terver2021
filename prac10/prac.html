@@ -13103,7 +13103,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='data/lebeg.png' width=400/></p>
+<p><img src='data/r3.png' width=400/></p>
 
 </div>
 </div>
@@ -13119,15 +13119,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='data/r2.png' width=400/></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='data/r3.png' width=400/></p>
+<p><img src='data/lebeg.png' width=400/></p>
 
 </div>
 </div>
@@ -13165,16 +13157,18 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Случайной (скалярной) величиной</strong> $\xi$ называется такая функция $\xi: \Omega \to \mathbb{R}$, что для любого борелевского множества $B \in \mathcal{B}$ выполнено</p>
-$$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$
+<p><strong>Напоминание</strong></p>
+<p>Минимальную $\sigma$-алгебру, содержащую все $n$-мерные параллелепипеды $\{[a_1,b_1) \times \ldots \times [a_n, b_n)\}$- называют борелевской $\sigma$-алгеброй над $\mathbb{R}^{n}$ ($\mathcal{B}$), а ее элементы - борелевскими множествами множества $\mathbb{R}^{n}$ ($B$).</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Напоминание:</p>
-<p>Минимальная $\sigma$-алгебру, содержащую все $n$-мерные параллелепипеды $\{[a_1,b_1) \times \ldots \times [a_n, b_n)\}$- называют борелевской $\sigma$-алгеброй над $\mathbb{R}^{n}$ ($\mathcal{B}$), а ее элементы - борелевскими множествами множества $\mathbb{R}^{n}$ ($B$).</p>
+<p>Борелевской мерой каждого параллелепипеда назовем
+$$\lambda \Big([a_1,b_1) \times \ldots \times [a_n, b_n)\Big) = (b_1 - a_1) \times \ldots \times (b_n -a_n)$$</p>
+<p>По т. Каратеодори, эту меру можно продолжить на все элементы $\mathcal{B}$. Такая мера и называется <strong>мерой Лебега</strong></p>
 
 </div>
 </div>
@@ -13184,6 +13178,39 @@ $$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Всякое борелевское множество на отрезке является измеримым относительно <strong>меры Лебега</strong>, но обратное неверно.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Интеграл Лебега</strong> (наброски)</p>
+<p>Основная идея в том, что мы строим интегральные суммы вертикально от образа, а не от прообраза.</p>
+$$\int_{\mathcal{B}}f(x)dx = \sum_{i}y_i^{*}\mu(A_i)$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src='data/r2.png' width=400/></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Случайной (скалярной) величиной</strong> $\xi$ называется такая функция $\xi: \Omega \to \mathbb{R}$, что для любого борелевского множества $B \in \mathcal{B}$ выполнено</p>
+$$\xi^{-1}(B) = \{\omega|\xi(\omega) \in B\} \in \mathcal{F}$$
 </div>
 </div>
 </div>
@@ -13240,7 +13267,7 @@ $$F_{\xi}(b) - F_{\xi}(a) = \int_{a}^{b}\rho_{\xi}(x)dx$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> Нарисовать для Параболы суммы Дарбу для Римана и для Лебега</p>
+<p><strong>1.</strong> Нарисовать для Параболы интегральные суммы для интеграла Римана и для интеграла Лебега</p>
 <p><strong>2.</strong> Пример функции, которая неинтегрируема по Риману, но интегрируется по Лебегу</p>
 <p><strong>3.</strong>
 Случайная величина $\xi$ имеет функцию распределения $F_{\xi}$, определенную равенством
@@ -13255,7 +13282,7 @@ $$F_\xi(x) =\left\{
 </ul>
 <p><strong>4.</strong> Случайная величина $\xi$ имеет непрерывную функцию распределения $F_{\xi}(x)$. 
 Найдите функцию распределения случайной величины $\eta=3-2\xi$.</p>
-<p><strong>5.</strong> Докажите формулу свертки.</p>
+<p><strong>5.</strong> <a href="https://tvims.nsu.ru/chernova/tv/lec/node39.html">Докажите формулу свертки</a></p>
 $$\rho_{\xi_1 + \xi_2}(x) = \int_{-\infty}^{\infty}f_{\xi_1}(u)f_{\xi_2}(x - u)du$$<p><strong>6.</strong> 2 лыжника условились о встрече в промежуток времени $[0,1]$. Момент прихода на встречу каждым выбирается равновероятно. Первый лыжник пришел в момент времени $t_1$, второй лыжник в $t_2$. Пусть $\theta = |t_1 - t_2|$. Найдите:</p>
 <ul>
 <li>функцию распределения $F_{\theta}(x)$</li>
@@ -13275,13 +13302,13 @@ $$\rho_{\xi_1 + \xi_2}(x) = \int_{-\infty}^{\infty}f_{\xi_1}(u)f_{\xi_2}(x - u)d
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>0.</strong> Нарисовать суммы дарбу и объяснить сходимость гиперболы для Римана и Лебега</p>
-<p><strong>1.</strong>
-В квадрате $[0,1]^2$ наугад выбирается точка $\omega=(\omega_1,\omega_2)$. Случайная величина $\xi$ задается равенством $\xi(\omega)=\omega_1+\omega_2$. Найдите функцию распределения $F_{\xi}(x)$.</p>
+<p><strong>1.</strong> Нарисовать интегральные суммы и объяснить сходимость гиперболы для Римана и Лебега</p>
 <p><strong>2.</strong>
+В квадрате $[0,1]^2$ наугад выбирается точка $\omega=(\omega_1,\omega_2)$. Случайная величина $\xi$ задается равенством $\xi(\omega)=\omega_1+\omega_2$. Найдите функцию распределения $F_{\xi}(x)$.</p>
+<p><strong>3.</strong>
 Случайная величина $\xi$ имеет непрерывную функцию распределения $F_{\xi}(x)$. 
 Найдите функцию распределения случайной величины $\eta=1-3\xi^2$.</p>
-<p><strong>3.</strong> Плотность распределения случайной величины $\xi$ задана формулой
+<p><strong>4.</strong> Плотность распределения случайной величины $\xi$ задана формулой
     $$f_\xi(x) =\left\{
     \begin{array}{cc}
     Cx^{-3/2}, &amp; x\geq 1 \\
@@ -13293,15 +13320,13 @@ $$\rho_{\xi_1 + \xi_2}(x) = \int_{-\infty}^{\infty}f_{\xi_1}(u)f_{\xi_2}(x - u)d
 <li>плотность распределения $\eta=1/\xi$ </li>
 <li>$P\{0,1&lt;\eta&lt;0,2\}$.</li>
 </ul>
-<p><strong>4.</strong> 
+<p><strong>5.</strong> 
 Функция распределения случайной величины $\xi$ имеет вид $F_{\xi}(x)=a + b*arctg(x)$. 
 Найдите:</p>
 <ul>
 <li>параметры $a$ и $b$</li>
 <li>плотность вероятности.</li>
 </ul>
-<p><strong>5.</strong> Случайная величина $\xi$ имеет распределение Коши с плотностью $\rho_{\xi}(x)=\frac{1}{\pi(1+x^2)}$. 
-Найдите плотность и функцию распределения случайной величины $\eta = \frac{1}{1+\xi^2}$.</p>
 
 </div>
 </div>
