@@ -1,1 +1,1 @@
-11. [Марковские цепи](https://mathmechterver.github.io/terver2021/prac11/prac11.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac11/prac11.ipynb)
+11. [Непрерывное матожидание](https://mathmechterver.github.io/terver2021/prac11/prac11.html)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mathmechterver/terver2021/blob/master/prac11/prac11.ipynb)

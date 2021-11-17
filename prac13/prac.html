@@ -13096,185 +13096,28 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="12.-&#1057;&#1086;&#1074;&#1084;&#1077;&#1089;&#1090;&#1085;&#1099;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;.">12. &#1057;&#1086;&#1074;&#1084;&#1077;&#1089;&#1090;&#1085;&#1099;&#1077; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;.<a class="anchor-link" href="#12.-&#1057;&#1086;&#1074;&#1084;&#1077;&#1089;&#1090;&#1085;&#1099;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103;.">&#182;</a></h1>
+<h1 id="13.-&#1059;&#1089;&#1083;&#1086;&#1074;&#1085;&#1086;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;">13. &#1059;&#1089;&#1083;&#1086;&#1074;&#1085;&#1086;&#1077; &#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#13.-&#1059;&#1089;&#1083;&#1086;&#1074;&#1085;&#1086;&#1077;-&#1088;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='data/joint.jpeg' width=400/></p>
-
+$$\rho_{\xi|\eta}(x|y_0) = \frac{\rho_{\xi,\eta}(x, y_0)}{\rho_{\eta}(y_0)}$$$$\rho_{\xi}(x) = \int_{-\infty}^{\infty} \rho_{\xi|\eta}(x|y)\rho_{\eta}(y)dy$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#182;</a></h2><ul>
-<li><a href="#chapter1">Теория</a></li>
-<li><a href="#chapter2">Задачи на пару</a></li>
-<li><a href="#chapter3">Домашнее задание</a></li>
-<li><a href="#chapter4">Гробы</a></li>
-</ul>
-
+<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091;<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103; <a class="anchor" id="chapter1" /><a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$F_{\xi,\eta}(x,y) = P(\xi \leq x, \eta \leq y) = \int_{-\infty}^{x}\int_{-\infty}^{y}\rho_{\xi,\eta}(x,y)dxdy$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Остальное все аналогично</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Дисперсия случайной величины
-$$\mathbb{D}[\xi] = \mathbb{E}[\xi - \mathbb{E}[\xi]]^2 = \mathbb{E}[\xi^2] - \mathbb{E}[\xi]^2$$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ковариация двух случайных величин
-$$cov(\xi,\mu) = \mathbb{E}\Big[(\xi - \mathbb{E}[\xi])(\mu - \mathbb{E}[\mu])\Big]$$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Корреляция двух случайных величин</p>
-$$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091; <a class="anchor" id="chapter2" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong>
-Совместное распределение случайных величин $\xi$ и $\eta$ имеет плотность
-$$\rho_{\xi,\eta}(x,y) =\left\{
-    \begin{array}{cc}
-    x+y, &amp; 0\leq x\leq 1, 0\leq y\leq 1 \\
-    0, &amp; otherwise
-    \end{array}\right.$$
-Найдите</p>
-<ul>
-<li>Маргинальные распределения $\xi$, $\eta$</li>
-<li>$E_{\xi}$, $E_{\eta}$</li>
-<li>$D_{\xi}$, $D_{\eta}$</li>
-<li>$cov(\xi,\eta)$.</li>
-</ul>
-<p><strong>2.</strong> Пусть $X$,$Y$ - независимые случайные величины с функциями распределения $F_X=1-e^{-ax}$, $F_Y=1-e^{-by}$, $x, y, a, b&gt;0$. Найти $E(XY)$.</p>
-<p><strong>3.</strong> Найти коэффициент корреляции между $\xi$ и $\eta = e^{-\xi}$ , если 
-$\xi$ имеет стандартное нормальное распределение с параметрами $\mu$ и $\sigma$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1044;&#1047;-">&#1044;&#1047; <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1044;&#1047;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1.</strong> (3) Совместное распределение случайных величин $\xi$ и $\eta$ имеет плотность
-$$\rho_{\xi,\eta}(x,y) =\left\{
-    \begin{array}{cc}
-    \frac{3}{2}(x^2+y^2), &amp; 0\leq x\leq 1, 0\leq y\leq 1 \\
-    0, &amp; otherwise
-    \end{array}\right.$$
-Найдите</p>
-<ul>
-<li>(0.5) Маргинальные распределения $\xi$, $\eta$</li>
-<li>(1) $E_{\xi}$, $E_{\eta}$</li>
-<li>(0.5) $D_{\xi}$, $D_{\eta}$</li>
-<li>(1) $cov(\xi,\eta)$.</li>
-</ul>
-<p><strong>2.</strong> Доказать, что не существует трех случайных величин $\xi$, $\eta$ и
-$\theta$ таких, что коэффициент корреляции любых двух из них равен $-1$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> Пусть случайные величины $\xi$ и $\eta$ имеют нулевые средние значения, единичные дисперсии
-и коэффициент корреляции $c$. Показать,
-что $E\max{(\xi^2,\eta^2)} \geq 1 + \sqrt{1 - c^2} $.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1042;&#1080;&#1076;&#1077;&#1086;">&#1042;&#1080;&#1076;&#1077;&#1086;<a class="anchor-link" href="#&#1042;&#1080;&#1076;&#1077;&#1086;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://stepik.org/lesson/48677/step/1?unit=26448">Совместное распределение</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node34.html#SECTION000910">Совместное распределение</a></p>
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node35.html">Типы многомерных распределений</a></p>
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node36.html">Примеры многомерных распределений</a></p>
-<p><a href="https://nsu.ru/mmf/tvims/chernova/tv/lec/node38.html">Многомерная независимость</a></p>
+<p><strong>5.</strong> Случайные величины $\xi$ и $\eta$ независимы и имеют показательное распределение с параметром 1. Доказать, что отношение $\frac{\xi}{\xi + \eta}$ распределено равномерно на отрезке $[0, 1]$.</p>
 
 </div>
 </div>
