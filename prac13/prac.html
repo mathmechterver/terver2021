@@ -13103,14 +13103,78 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\rho_{\xi|\eta}(x|y_0) = \frac{\rho_{\xi,\eta}(x, y_0)}{\rho_{\eta}(y_0)}$$$$\rho_{\xi}(x) = \int_{-\infty}^{\infty} \rho_{\xi|\eta}(x|y)\rho_{\eta}(y)dy$$
+<p><img src='data/image.png' width=400/></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091;<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;">&#182;</a></h2>
+<h2 id="&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;">&#182;</a></h2><ul>
+<li><a href="#chapter1">Теория</a></li>
+<li><a href="#chapter2">Задачи на пару</a></li>
+<li><a href="#chapter3">Домашнее задание</a></li>
+<li><a href="#chapter4">Гробы</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#1058;&#1077;&#1086;&#1088;&#1080;&#1103; <a class="anchor" id="chapter1" /><a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1080;&#1103;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Введем условную плотность аналогично условной вероятности</p>
+$$\rho_{\xi|\eta}(x| y) = \frac{\rho_{\xi,\eta}(x, y)}{\rho_{\eta}(y)}$$$$\rho_{\xi,\eta}(x, y) = \rho_{\xi|\eta}(x| y)\rho_{\eta}(y) = \rho_{\eta|\xi}(y| x)\rho_{\xi}(x)$$<p>Можем найти <strong>маргинальное</strong> распределение через условную вероятность
+$$\rho_{\eta}(y) = \int_{-\infty}^{\infty} \rho_{\xi, \eta}(x, y)dy = \int_{-\infty}^{\infty} \rho_{\eta|\xi}(y|x)\rho_{\xi}(x)dx$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>И вывод Баеса</p>
+$$\rho_{\xi|\eta}(x| y) = \frac{\rho_{\xi,\eta}(x, y)}{\rho_{\eta}(y)} = \frac{\rho_{\eta|\xi}(y| x)\rho_{\xi}(x)}{\int_{-\infty}^{\infty} \rho_{\eta|\xi}(y|x)\rho_{\xi}(x)dx}$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>А на этом моменте мне заебало писать лишние буквы, поэтому записываю все в терминах статистики</p>
+$$\rho(\theta|X) = \frac{\rho(X|\theta)\rho(\theta)}{\int \rho(X|\theta)\rho(\theta)d\theta}$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Или машинного обучения
+$$\rho(\theta|data) = \frac{\rho(data|\theta)\rho(\theta)}{\int \rho(data|\theta)\rho(\theta)d\theta}$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1085;&#1072; &#1087;&#1072;&#1088;&#1091; <a class="anchor" id="chapter2" /><a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1080;-&#1085;&#1072;-&#1087;&#1072;&#1088;&#1091;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1.</strong> Пусть $\mu \sim U[0,1]$, а $X \sim \mathcal{N}(\mu, 1)$. Ну и докажите хуйню какую-нибудь</p>
+
 </div>
 </div>
 </div>
@@ -13119,6 +13183,20 @@ $$\rho_{\xi|\eta}(x|y_0) = \frac{\rho_{\xi,\eta}(x, y_0)}{\rho_{\eta}(y_0)}$$$$\
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>5.</strong> Случайные величины $\xi$ и $\eta$ независимы и имеют показательное распределение с параметром 1. Доказать, что отношение $\frac{\xi}{\xi + \eta}$ распределено равномерно на отрезке $[0, 1]$.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1044;&#1047;-">&#1044;&#1047; <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1044;&#1047;-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
 </div>
 </div>
 </div>
