@@ -13173,7 +13173,7 @@ $$cov(\xi,\mu) = \mathbb{E}\Big[(\xi - \mathbb{E}[\xi])(\mu - \mathbb{E}[\mu])\B
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Корреляция двух случайных величин</p>
-$$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\mathbb{D}[\xi]\mathbb{D}[\mu]}$$
+$$cor(\xi, \mu) = \frac{cov(\xi, \mu)}{\sqrt{\mathbb{D}[\xi]\mathbb{D}[\mu]}}$$
 </div>
 </div>
 </div>
@@ -13241,7 +13241,7 @@ $\theta$ таких, что коэффициент корреляции любы
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>3.</strong> Пусть случайные величины $\xi$ и $\eta$ имеют нулевые средние значения, единичные дисперсии
 и коэффициент корреляции $c$. Показать,
-что $E\max{(\xi^2,\eta^2)} \geq 1 + \sqrt{1 - c^2} $.</p>
+что $E\max{(\xi^2,\eta^2)} \leq 1 + \sqrt{1 - c^2} $.</p>
 
 </div>
 </div>

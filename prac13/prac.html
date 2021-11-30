@@ -13141,6 +13141,21 @@ $$\rho_{\eta}(y) = \int_{-\infty}^{\infty} \rho_{\xi, \eta}(x, y)dy = \int_{-\in
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Можем повесить на это интеграл и получить. $A$ - некоторое событие, которое получится при интегрировании по $B_A$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$\int_{B_A}\rho_{\eta}(y)dy = P(A) = \int_{-\infty}^{+\infty}P(A|\xi=x)\rho_{\xi}(x)dx = \int_{-\infty}^{+\infty}\int_{B_A}\rho_{\eta|\xi}(y|x)\rho_{\xi}(x)dx$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>И вывод Баеса</p>
 $$\rho_{\xi|\eta}(x| y) = \frac{\rho_{\xi,\eta}(x, y)}{\rho_{\eta}(y)} = \frac{\rho_{\eta|\xi}(y| x)\rho_{\xi}(x)}{\int_{-\infty}^{\infty} \rho_{\eta|\xi}(y|x)\rho_{\xi}(x)dx}$$
 </div>
@@ -13191,7 +13206,7 @@ $$\rho_{\xi,\eta}(x,y) =\left\{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> Пусть $\theta \sim U[a_1, a_2]$ ($a_1, a_2 &gt; 0$), а $X \sim Exp(\theta)$. Это значит мы знаем $\rho_{alpha}$ и $\rho_{X|\theta}$
+<p><strong>3.</strong> Пусть $\theta \sim U[a_1, a_2]$ ($a_1, a_2 &gt; 0$), а $X \sim Exp(\theta)$. Это значит мы знаем $\rho_{\theta}$ и $\rho_{X|\theta}$
 Найдите априорное распределение $X$ $\rho_{X}$ и апостериорное $\rho_{\theta|X}$</p>
 
 </div>
