@@ -13215,15 +13215,6 @@ $$\rho_{\xi,\eta}(x,y) =\left\{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4.</strong> Димас напился и купил 10 одинаковых жигулей с сломанным табло бензобака. Ему стало интересно, а какой объем бензобака у этих жиг. Интернету он не доверяет, поэтому решил поставить эксперимент. Он вылил бензин из каждой жиги и получил 10 чисел (25, 9, 12, 15, 3, 30, 17, 18, 24, 22). Он прикинул, что объем где-то от 30 до 40 литров, а в каждой из жиг также осталось какое-то кол-во бензина от старых хозяев от 0 до полного объема бензобака. Помогите Димасу оценить объем бензобака.</p>
-<p>Найдите апостериорное распределение на объем бензобака исходя их того, что объем бензобака и остатки распределены равномерно.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#1044;&#1047;-">&#1044;&#1047; <a class="anchor" id="chapter3" /><a class="anchor-link" href="#&#1044;&#1047;-">&#182;</a></h2>
 </div>
 </div>
@@ -13245,12 +13236,8 @@ $$\rho_{\xi,\eta}(x,y) =\left\{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2.</strong> (2)Пусть $a \sim U[0, 1]$, $b \sim U[0, a]$, а $X \sim U[0, b]$. Это значит мы знаем $\rho_{a}$,  $\rho_{b|a}$, $\rho_{X|b}$.
-Найдите</p>
-<ul>
-<li>(1) априорные распределения $\rho_{b}$, $\rho_{X}$</li>
-<li>(1) апостериорные $\rho_{b|X}$, $\rho_{a|X}$ </li>
-</ul>
+<p><strong>2.</strong> Пусть $a \sim U[1, 2]$, $b \sim Exp(a)$, а $c \sim N(b, a)$. 
+Найдите совместное распределение $\rho_{a,b,c}$</p>
 
 </div>
 </div>
@@ -13258,18 +13245,18 @@ $$\rho_{\xi,\eta}(x,y) =\left\{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3.</strong> Пусть у нас есть выборка из $X_1,\ldots, X_n \sim U[0,\theta]$ ( плотность $X_i$ равна $\rho(X|\theta)$). <strong>Сопряженным</strong> распределением $p(\theta)$ к $p(X|\theta)$ называется такое распределение, что $p(\theta|X)$ лежит в том же семействе, что и $p(\theta)$ (например $p(\theta)$ и $p(\theta|X)$ - оба нормальные, но с разными параметрами)</p>
-<p>Докажите, что распределение Парето $\rho(\theta) = \frac{ka^k}{x^{k+1}}$ ($a,k$ - просто константы), является <strong>сопряженным</strong> к $p(X|\theta)$.</p>
+<p><strong>3.</strong> Алина купила новое средство против сорняков. Всего сорняков, она прикинула от 900, до 1100. На них всех она распылила средство, на котором написано, что оно эффективно на 99.5 - 99.9 процентов. Найти вероятность того, что все сорняки вымрут, останится 1 сорняк, останется 2 сорняка?</p>
+<p>Для простоты вычислений можете считать, что распределение количества сорняков - непрерывное.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>4.</strong> Пусть у нас есть выборка из $X_1,\ldots, X_n \sim U[0,\theta]$ ( плотность $X_i$ равна $\rho(X|\theta)$). <strong>Сопряженным</strong> распределением $p(\theta)$ к $p(X|\theta)$ называется такое распределение, что $p(\theta|X)$ лежит в том же семействе, что и $p(\theta)$ (например $p(\theta)$ и $p(\theta|X)$ - оба нормальные, но с разными параметрами)</p>
+<p>Докажите, что распределение Парето $\rho(\theta) = \frac{ka^k}{x^{k+1}}$ ($a,k$ - просто константы, причем $x &lt; a$), является <strong>сопряженным</strong> к $p(X|\theta)$.</p>
 <p>Вам нужно найти $\rho(\theta|X)$ и показать, что оно тоже распределено по Парето.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4.</strong> 6 друзей решили собраться встретиться в баре. Но Настя забыла во сколько все решили собраться. Помнит только что с 0 до 1. Чтобы не спалиться, что она все забыла, она пришла самой первой в 0 и смотрела во сколько все приходят. Получила результат (0.8, 1.3, 1.2, 1.5, 1). При этом она знает, что каждый ее друг мог равновероятно опоздать на час.</p>
-<p>Помогите Насте восстановить изначальное время встречи, а лучше распределение даты встречи исходя из полученных ей данных.</p>
 
 </div>
 </div>
@@ -13280,6 +13267,40 @@ $$\rho_{\xi,\eta}(x,y) =\left\{
 <h2 id="&#1043;&#1088;&#1086;&#1073;&#1099;-">&#1043;&#1088;&#1086;&#1073;&#1099; <a class="anchor" id="chapter4" /><a class="anchor-link" href="#&#1043;&#1088;&#1086;&#1073;&#1099;-">&#182;</a></h2>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1.</strong> (2) Дана система с.в. $(X,Y)$. При этом $X$ имеет распределение Пуассона, а $Y$ имеет условное при $X=k$ Гамма распределение.
+Найти двумерную функцию распределения системы?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2.</strong> Пусть $X$ и $Y$ независимы и нормально распределены с параметрами $(m_1, d_1)$ и $(m_2, d_2)$.</p>
+<ul>
+<li>Найдите условное распределение $X + Y$ при условии $X = a$</li>
+<li>условное распределение $X$ при условии $X+Y=b$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
